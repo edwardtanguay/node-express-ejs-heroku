@@ -14,7 +14,8 @@ const staticDirectory = path.join(__dirname, 'public');
 app.use(express.static(staticDirectory));
 
 const siteData = {
-	applocation: process.env.APP_LOCATION
+	applocation: process.env.APP_LOCATION,
+	siteTitle: 'Heroku App'
 };
 
 console.log(siteData);
