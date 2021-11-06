@@ -1,0 +1,8 @@
+<%
+const showClass = (pageIdCode) => {
+	return pageIdCode == currentPageIdCode ? 'active' : '';
+}
+%>
+<nav>
+<a href="/" class="<%=showClass('home')%>">Home</a> | <a class="<%=showClass('info')%>" href="/info">Info</a>
+</nav>
