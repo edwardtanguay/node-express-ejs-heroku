@@ -1,8 +1,13 @@
-<%
-const showClass = (pageIdCode) => {
+<% const
+   showClass=(pageIdCode)=> {
 	return pageIdCode == currentPageIdCode ? 'active' : '';
-}
-%>
-<nav>
-<a href="/" class="<%=showClass('home')%>">Home</a> | <a class="<%=showClass('info')%>" href="/info">Info</a>
-</nav>
+	}
+	%>
+	<nav>
+		<div>
+			<a href="/"
+			   class="<%=showClass('home')%>">Home</a> | <a class="<%=showClass('info')%>"
+			   href="/info">Info</a>
+		</div>
+		<div>location: <%=applocation%></div>
+	</nav>
